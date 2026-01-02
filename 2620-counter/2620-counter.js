@@ -2,17 +2,16 @@
  * @param {number} n
  * @return {Function} counter
  */
- 
 var createCounter = function(n) {
-    
+    var a = 0;
     return function() {
-        return n++;
-        
+        a = n++
+        return a;
+
     };
 };
-let count = createCounter(5);
-console.log(count);
-
+let count =createCounter()
+console.log(count())
 /** 
  * const counter = createCounter(10)
  * counter() // 10
