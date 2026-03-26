@@ -9,6 +9,7 @@ var debounce = function(fn, t) {
         clearTimeout(limit)
         limit = setTimeout(()=>{
             fn(...args)
+
         },t)
     }
 
